@@ -8,111 +8,135 @@
 </head>
 <body>
   <nav class="toolbar">
-    <a href="#header" class="toolbar-link">Header</a>
-    <a href="#summary" class="toolbar-link">Summary</a>
-    <a href="#experience" class="toolbar-link">Experience</a>
+    <a href="#intro" class="toolbar-link">Introduction</a>
     <a href="#education" class="toolbar-link">Education</a>
-    <a href="#skills" class="toolbar-link">Skills</a>
+    <a href="#experience" class="toolbar-link">Experience</a>
+    
     <a href="#projects" class="toolbar-link">Projects</a>
     <a href="#publications" class="toolbar-link">Publications</a>
+    <a href="#skills" class="toolbar-link">Skills</a>
   </nav>
 
   <div class="container">
-    <section class="section" id="header">
-      <header>
-        <h1>Shivika Singh</h1>
-        <p class="profession">Computer Science Graduate Student</p>
-        <p class="contact">Mountain View, CA 94043 | +1 770-298-7554 | shivikasingh275@gmail.com | linkedin.com/in/shivikasingh98/ | github.com/shivika275</p>
-      </header>
-    </section>
-
-    <section class="section" id="summary">
-      <h2>Summary</h2>
-      <p>Passionate computer science graduate student with a strong background in artificial intelligence, robotics, and software engineering. Experienced in developing innovative solutions using cutting-edge technologies and collaborating in diverse teams.</p>
-    </section>
+    <section class="section" id="intro">
+        <header>
+          <div class="header-content">
+            <img src="images/Shivika.jpg" alt="Your Name" class="profile-image">
+            <div class="name-profession">
+              <h1>Shivika Singh</h1>
+              <p class="profession">Computer Science Graduate Student</p>
+              <p class="contact">Mountain View, CA 94043 | +1 770-298-7554 | shivikasingh275@gmail.com | linkedin.com/in/shivikasingh98/ | github.com/shivika275</p>
+            </div>
+        </div>
+        </header>
+        <div class="summary">
+          <h2>Hello, World! 👋</h2>
+          <p>Welcome to my resume! I'm a passionate computer science graduate student with a strong background in artificial intelligence, robotics, and software engineering. I thrive on developing innovative solutions using cutting-edge technologies and collaborating in diverse teams.</p>
+          <p>With a perfect 4.0 GPA from Georgia Tech and a stellar academic record, I'm ready to take on new challenges and make a lasting impact in the tech world. Let's embark on an exciting journey together and create something truly remarkable!</p>
+        </div>
+      </section>
 
     <section class="section" id="education">
       <h2>Education</h2>
-      <div class="education">
-        <h3>Georgia Institute of Technology</h3>
-        <p class="location">Atlanta, GA, USA</p>
-        <p class="degree">Master's in Computer Science, Specialization: Perception & Robotics</p>
-        <p class="gpa">GPA: 4.0/4.0</p>
-        <p class="date">Aug 2022 - May 2024</p>
+      <div class="education-container">
+        <div class="logo-container">
+          <img src="images/georgia-tech-logo.png" alt="Georgia Tech Logo" class="college-logo">
+        </div>
+        <div class="education-details">
+          <h3>Georgia Institute of Technology</h3>
+          <p class="location">Atlanta, GA, USA</p>
+          <p class="degree">Master's in Computer Science, Specialization: Perception & Robotics</p>
+          <p class="gpa">GPA: 4.0/4.0</p>
+          <p class="date">Aug 2022 - May 2024</p>
+        </div>
       </div>
-      <div class="education">
-        <h3>Manipal Institute of Technology</h3>
-        <p class="location">Manipal, KA, India</p>
-        <p class="degree">Bachelor's in Computer Science, Specialization: Artificial Intelligence</p>
-        <p class="gpa">GPA: 8.97/10.0</p>
-        <p class="date">Aug 2016 - May 2020</p>
+      <div class="education-container">
+        <div class="logo-container">
+          <img src="images/mit-logo.png" alt="MIT Logo" class="college-logo">
+        </div>
+        <div class="education-details">
+          <h3>Manipal Institute of Technology</h3>
+          <p class="location">Manipal, KA, India</p>
+          <p class="degree">Bachelor's in Computer Science, Specialization: Artificial Intelligence</p>
+          <p class="gpa">GPA: 8.97/10.0</p>
+          <p class="date">Aug 2016 - May 2020</p>
+        </div>
       </div>
     </section>
 
     <section class="section" id="experience">
       <h2>Experience</h2>
       <div class="job">
-        <h3>Graduate Student Researcher</h3>
-        <p class="company">CORE Robotics Lab</p>
-        <p class="date">May 2023 – May 2024</p>
-        <ul>
-          <li>Investigating multi-agent task allocation and scheduling problem by formulating it as an NP-hard optimization problem</li>
-          <li>Implemented Heterogeneous Graph Attention networks and Heterogeneous Graph Transformers for learning the agent and task embeddings for generating near-feasible schedules</li>
-          <li>Formulated a Markov Decision Process (MDP) and performed reward engineering for training the scheduling policy using Proximal Policy Optimization</li>
-        </ul>
+        <img src="images/core.png" alt="CORE Lab" class="job-image">
+        <div class="job-details">
+          <h3>Graduate Student Researcher</h3>
+          <p class="company">CORE Robotics Lab</p>
+          <p class="date">May 2023 – May 2024</p>
+          <ul>
+            <li>Investigating multi-agent task allocation and scheduling problem by formulating it as an NP-hard optimization problem</li>
+            <li>Implemented Heterogeneous Graph Attention networks and Heterogeneous Graph Transformers for learning the agent and task embeddings for generating near-feasible schedules</li>
+            <li>Formulated a Markov Decision Process (MDP) and performed reward engineering for training the scheduling policy using Proximal Policy Optimization</li>
+          </ul>
+        </div>
       </div>
       <div class="job">
-        <h3>Graduate Teaching Assistant</h3>
-        <p class="company">Georgia Institute of Technology (Intro to Perception & Robotics)</p>
-        <p class="date">Jan 2023 – May 2024</p>
-        <ul>
-          <li>Developed programming assignments and docker for them to deploy on the Autograder for evaluating concepts on exploration using Frontier Planning, motion planning using probabilistic sampling methods and dynamics controller using Proportional-Integrator-Derivative for 350+ students</li>
-        </ul>
+        <img src="images/georgia-tech-logo.png" alt="G Tech Logo" class="job-image">
+        <div class="job-details">
+          <h3>Graduate Teaching Assistant</h3>
+          <p class="company">Georgia Institute of Technology (Intro to Perception & Robotics)</p>
+          <p class="date">Jan 2023 – May 2024</p>
+          <ul>
+            <li>Developed programming assignments and docker for them to deploy on the Autograder for evaluating concepts on exploration using Frontier Planning, motion planning using probabilistic sampling methods and dynamics controller using Proportional-Integrator-Derivative for 350+ students</li>
+          </ul>
+        </div>
       </div>
       <div class="job">
-        <h3>Systems/Software Engineer</h3>
-        <p class="company">Hewlett Packard Enterprise</p>
-        <p class="date">Jan 2020 – Jul 2022</p>
-        <ul>
-          <li>Enhanced Java Database Connector for Nonstop SQL/MX database by adding support for large object data type in ResultSet.Sql APIs, improving query performance and eliminating the need to distribute large objects across multiple rows</li>
-          <li>Designed, developed, and automated tests for qualitative assurance of large-object (LOB) data-type support and concurrent database operations (DDL/DML) via Java Database Connector using JUnit and ApacheAnt framework</li>
-          <li>Successfully led the migration of an internal developer's tool (Windows application) to the latest Visual C++ and SSL libraries, collaborating with and supporting four development teams throughout the migration process</li>
-          <li>Developed a proof of concept for improving the performance of NonStop SQL/MX database execution engine by enabling high volume inter-process communication data transfer. This increased the inter-process packet from 32KB to 2 GB.</li>
-        </ul>
+        <img src="images/hpe.png" alt="HPE Logo" class="job-image">
+        <div class="job-details">
+          <h3>Systems/Software Engineer</h3>
+          <p class="company">Hewlett Packard Enterprise</p>
+          <p class="date">Jan 2020 – Jul 2022</p>
+          <ul>
+            <li>Enhanced Java Database Connector for Nonstop SQL/MX database by adding support for large object data type in ResultSet.Sql APIs, improving query performance and eliminating the need to distribute large objects across multiple rows</li>
+            <li>Designed, developed, and automated tests for qualitative assurance of large-object (LOB) data-type support and concurrent database operations (DDL/DML) via Java Database Connector using JUnit and ApacheAnt framework</li>
+            <li>Successfully led the migration of an internal developer's tool (Windows application) to the latest Visual C++ and SSL libraries, collaborating with and supporting four development teams throughout the migration process</li>
+            <li>Developed a proof of concept for improving the performance of NonStop SQL/MX database execution engine by enabling high volume inter-process communication data transfer. This increased the inter-process packet from 32KB to 2 GB.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="skills">
-      <h2>Technical Skills</h2>
-      <div class="skills">
-        <h3>Languages</h3>
-        <p>C/C++, Java, Python, SQL, Go, HTML, CSS, Spring Boot</p>
-      </div>
-      <div class="skills">
-        <h3>Libraries</h3>
-        <p>PyTorch, scikit-learn, Pandas, Numpy, cleanRL, spinningUp, gym, networkx, Deep Graph Library(DGL), CUDA, MPI</p>
-      </div>
-      <div class="skills">
-        <h3>Others</h3>
-        <p>wandb, Docker, ROS2, Visual Studios, JUnit, PyTest, MATLAB, Apache Ant, Git, Docker, Make, MSVC, Linux, Mac-OS, Windows, HP-Unix</p>
-      </div>
-    </section>
+
 
     <section class="section" id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Real-time Balance Calculator Service using Event Sourcing</h3>
-        <p class="technologies">Java, Spring Boot</p>
-        <p class="date">Mar - April 2024</p>
-        <p>Developed a real-time balance calculator service with REST APIs for authorized fund additions and deductions, while maintaining an event log to track all the events and enable server state restoration in case of failure.</p>
-      </div>
-      <div class="project">
-        <h3>Multi-Agent RL Benchmark and Learning Environment for Robotarium (MARBLER)</h3>
-        <p class="technologies">Python, Pytorch, Robotarium</p>
-        <p class="date">Jan - Jun 2023</p>
-        <p>Developed an open-source OpenAI Gym environment for benchmarking Multi-Agent Reinforcement Learning (MARL) algorithms that supports sim-to-real transfer to turtlebots through Georgia Tech's Robotarium simulator. Performed extensive hyper-parameter search for benchmarking SOTA MARL algorithms implemented in the E-PyMARL platform on MARBLER.</p>
-      </div>
-    </section>
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="images/event-source.png" alt="Icon" class="project-icon-1">
+            <div class="project-details">
+                <h3>Real-time Balance Calculator Service using Event Sourcing</h3>
+                <p class="technologies">Java, Spring Boot</p>
+                <p class="date">Mar - April 2024</p>
+                <ul class="project-description">
+                    <li>Developed a real-time balance calculator service with REST APIs for authorized fund additions and deductions.</li>
+                    <li>Maintained an event log to track all the events and enable server state restoration in case of failure.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="project">
+            <img src="images/marbler.png" alt="Icon" class="project-icon-2">
+            <div class="project-details">
+                <h3>Multi-Agent RL Benchmark and Learning Environment for Robotarium (MARBLER)</h3>
+                <p class="technologies">Python, Pytorch, Robotarium</p>
+                <p class="date">Jan - Jun 2023</p>
+                <ul class="project-description">
+                    <li>Developed an open-source OpenAI Gym environment for benchmarking Multi-Agent Reinforcement Learning (MARL) algorithms.</li>
+                    <li>Supported sim-to-real transfer to turtlebots through Georgia Tech's Robotarium simulator.</li>
+                    <li>Performed extensive hyper-parameter search for benchmarking SOTA MARL algorithms implemented in the E-PyMARL platform on MARBLER.</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      
 
     <section class="section" id="publications">
       <h2>Publications</h2>
@@ -129,6 +153,54 @@
         <p class="conference">AeroConf 2018</p>
       </div>
     </section>
+    
+    <section class="section" id="skills">
+        <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                <h3>Languages</h3>
+                <ul>
+                    <li>C/C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>SQL</li> 
+                    <li>HTML</li> 
+                    <li>CSS</li>
+                </ul>
+                </div>
+                <div class="skill-card">
+                <h3>Libraries</h3>
+                <ul>
+                    <li>PyTorch</li>
+                    <li>scikit-learn</li>
+                    <li>Pandas</li>
+                    <li>Numpy</li> 
+                    <li>cleanRL</li> 
+                    <li>spinningUp</li> 
+                    <li>networkx</li> 
+                    <li>Deep Graph Library(DGL)</li> 
+                    <li>CUDA</li> 
+                    <li>MPI</li> 
+                </ul>
+                </div>
+                <div class="skill-card">
+                <h3>Tools & Technologies</h3>
+                <ul>
+                    <li>wandb</li>
+                    <li>Docker</li>
+                    <li>ROS2</li>
+                    <li> Visual Studios</li> 
+                    <li>JUnit</li> 
+                    <li>PyTest</li> 
+                    <li>MATLAB</li> 
+                    <li>Apache Ant</li> 
+                    <li>Git</li> 
+                    <li>Docker</li> 
+                    <li>Make</li> 
+                </ul>
+                </div>
+            </div>
+        </section>
   </div>
 </body>
 </html>
