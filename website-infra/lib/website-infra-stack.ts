@@ -9,14 +9,13 @@ import * as targets from 'aws-cdk-lib/aws-route53-targets';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 
 import { Construct } from 'constructs';
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
 
 export class WebsiteInfraStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
     const bucket = new s3.Bucket(this, 'ResumeBucket', {
-      bucketName: 'shivika-aws-resume-bucket', // Replace with your desired bucket name
+      bucketName: 'shivika-aws-resume-bucket',
       websiteIndexDocument: 'index.html',
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       blockPublicAccess: {
@@ -35,7 +34,6 @@ export class WebsiteInfraStack extends cdk.Stack {
         }
       ],
       encryption: s3.BucketEncryption.S3_MANAGED,
-      //enforceSSL: true,
       versioned: true
     });
 
@@ -49,7 +47,7 @@ export class WebsiteInfraStack extends cdk.Stack {
     bucket.addToResourcePolicy(public_policy);
 
     new s3Deployment.BucketDeployment(this, 'ResumeWebsite', {
-      sources: [s3Deployment.Source.asset('../website')], // Path to your website files
+      sources: [s3Deployment.Source.asset('../website')],
       destinationBucket: bucket
     });
 
